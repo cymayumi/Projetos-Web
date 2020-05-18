@@ -1,0 +1,55 @@
+body {
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+#imagem-logo {
+    width: 180px;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+}
+
+#centraliza-login {
+    clear: both;
+    margin-top: 330px;
+    text-align: center;
+}
+
+.form-login {
+    margin-top: -150px;
+    max-width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.cabecalho {
+    float: left;
+}
+
+.cadastro-bloco {
+    clear: both;
+    margin-top: 200px;
+}
+
+#titulo-descentralizado {
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#imagem-logo-direita {
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 0px;
+}
+
+.centraliza-button{
+    text-align: center;
+}
+
