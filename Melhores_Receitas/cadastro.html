@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Top Chef</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <hearder class="cabecalho">
+        <h1 id="titulo-descentralizado">Top Chefs Receitas Mundiais</h1>
+    </hearder>
+    <figure id="imagem-logo-direita">
+        <img src="logo1.png" width="190px"/>
+    </figure>
+    <div class="cadastro-bloco">
+        <h3>Cadastro de novos chefs</h3>
+        <hr />
+        <form class="main-form" method="post">
+            <fieldset class="form-group">
+                <legend>Dados Pessoais</legend>
+                <div class="form-group">
+                    <label class="textlabel" for="nomeCompletoInput">Nome Completo</label>
+                    <input id="nomeInput" name="nome" type="text" autofocus="autofocus" class="form-control" maxlength="70" required="required" />
+                </div>
+                <div class="form-group">
+                    <label class="textlabel" for="emailInput">Email</label>
+                    <input id="emailInput" name="email" type="email" autofocus="autofocus" class="form-control" required="required" />
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label class="textlabel" for="dataInput">Data de nascimento</label>
+                    <input id="dataInput" name="data" type="date" autofocus="autofocus" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="textlabel" for="addressInput">Endereço</label>
+                    <input id="addressInput" name="address" type="text" autofocus="autofocus" class="form-control" />
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <label class="textlabel" for="cityInput">Cidade</label>
+                        <input id="cityInput" name="city" type="text" autofocus="autofocus" class="form-control" />
+                    </div>
+                    <div class="col">
+                        <label class="textlabel" for="countryInput">País</label>
+                        <input id="countryInput" name="country" type="text" autofocus="autofocus" class="form-control" pattern="[A-ZA-Z]{3}"
+                               required="required" placeholder="USA" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="textlabel" for="profInput">Selecione sua profissão</label>
+                    <select id="profissao" name="profissao" class="custom-select">
+                        <option label="Confeiteiro" value="conf"></option>
+                        <option label="Estudante" value="estud"></option>
+                        <option label="Cheff" value="cheff"></option>
+                        <option label="Ajudante" value="ajuda"></option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dados do seu restaurante</legend>
+                <div class="form-group">
+                    <label class="textlabel" for="restInput">Nome Restaurante</label>
+                    <input id="restInput" name="restaurante" type="text" autofocus="autofocus" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="textlabel" for="blogInput">Blog ou Instagram</label>
+                    <input id="blogInput" name="blog" type="url" autofocus="autofocus" class="form-control" />
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Quer receber nossas novidades por email?</label>
+                </div>
+            </fieldset>
+            </br></br></br></br>
+            <div class="centraliza-button">
+                <input type="submit" class="btn btn-success" value="Finalizar Cadastro" />
+            </div>
+        </form>
+        
+        <footer>
+            <hr />
+            &copy; Desenvolvido por Cynthia Oka 2020
+        </footer>
+    </div>
+</body>
+</html>
