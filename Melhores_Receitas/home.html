@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--conteudo que não será renderizado para o usuário, mas são informação úteis para o browser-->
+    <!--TAGs mais usadas dentro de "head" são <title>, <meta>, <script>, <style>, <link>, <base>-->
+    <title> Receitas Maravilhosas </title>
+    <!--<meta> é usadada na localização do conteúdo pelos mecanismos de busca ou para indicar como pág deve ser renderizada-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+ <!--conteúdo da página que será mostrado pelos navegadores-->
+        <!--os mais usados são text, list, links, tables, images-->
+        <!--"class" identificam um conjunto de elementos enquanto o "id" é a forma de identificar 
+            um elemento e seve ser único para cada um-->
+            <hearder id="inicio_cabecalho">
+                <h1 id="texto_logo">Melhores Receitas do Mundo</h1>
+                    <!--<div> identifica uma seção em nossa página. Em HTML5 temos mais TAGs disponíveis para
+                        organizar melhor o código, sem usar apenas <div>, temos <section>, <article>, <footer>, <nav>-->
+                <div id="texto_inicio">
+                    <p id="message">Aqui você encontrará as mais deliciosas receitas do mundo e suas histórias!</p>
+                </div> 
+            </hearder>
+            <figure id="logo_imagem">
+                <a href="home.html"><img src="logo1.png" width="190px"/></a>
+            </figure> 
+            <ul class="breadcrumb">
+                <li><a href="#">Receitas</a></li>
+                <li><a href="#">Melhores Receitas</a></li>
+                <li><a href="#">Categoria Doces</a></li>
+            </ul>
+            <div class="nome_receita">
+                    <h3>Brigadeiro de Chocolate</h3> 
+                    <hr/>
+                </div>
+            <section class="selection1">
+                
+                <figure id="brigadeiro_imagem">
+                    <img src="brigadeiro1.jpg" alt="Foto do Brigadeiro" width="200px"/>
+                </figure>
+                <div class="bloco_ingredientes">
+                    <h5>Ingredientes</h5>
+                    <ul class="lista_ingredientes">
+                        <li>1 lata de leite condensado</li>
+                        <li>4 colheres de sopa de chocolate em pó meio amargo</li>
+                        <li>1 colher de sopa de manteiga</li>
+                        <li>Chocolate granulado</li>
+                        <li>Pitada de sal</li>
+                    </ul>
+                </div>
+                <div class ="bloco_preparo">
+                    <h5>Modo de Preparo</h5>
+                    <p>
+                        Misture o leite condensado, o chocolate em pó e a manteiga em fogo baixo até tudo ser incorporado. Mexa 
+                        sem parar sua mistura até ela começar a desgrudar da panela e você perceber que ela já está no ponto para enrolar.
+                    </p>
+                    <p>
+                        Arrume todas as forminhas em uma bandeija. Após esfriar nossa mistura, faça bolinhas e envolva-as em
+                         chocolate granulado. Se quiser pode adicionar diferentes confeitos para deixar seus brigadeiros mais bonitos e gostosos.
+                    </p>
+                </div>
+                <div class="bloco_nutri">
+                    <h5>Informações Nutricionais</h5>
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th>Ingredientes</th>
+                                <th>Calorias</tr>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Leite Condensado</td>
+                                <td>356 Kcal</td>
+                            </tr>
+                            <tr>
+                                <td>Manteiga</td>
+                                <td>120 Kcal</td>
+                            </tr>
+                            <tr>
+                                <td>Chocolate em pó</em></td>
+                                <td>284 Kcal</td>
+                            </tr>
+                            <tr>
+                                <td>Granulado</td>
+                                <td>55 Kcal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>     
+            </section>
+            <section class="selection2">
+                <p>
+                <!--link para um elemento externo a esse HTML-->
+                    <a href="./historia_receita.html">Conheça a História do Brigadeiro >></a>
+                </p>
+                <p>
+                <!--link com redirecionamento interno, volta lá pra cima na outra TAG <header> com ID="inicio"
+                    href=".historia_receita#imagem" redirecionará para a outra págia na posição da ancora #imagem-->
+                 <!--links (endereços para outra URL ou para outra posição dentro da mesma página) são adicionados
+                    no código HTML por meio de ancoras, ou seja, utilizando a TAG <a>. Identificamos se a TAG é a fonte ou 
+                    o target do click. <div> e outras TAGs também podem ser usadas como ancoras ao linkarmos o ID-->
+                    <a href="https://www.carrefour.com.br/">Compre os ingredientes ></a>
+                </p>
+                <p>
+                        <a href="cadastro.html">Cadastre-se no nosso site >></a>
+                    </p>
+                <button class="likes" onclick="contarLikes()">
+                    <img src="amei.jpg" width="40px" id="img_amei"/>
+                    <p id="contador">0</p>
+                </button>
+            </section>
+            <footer>
+                <hr/>
+                &copy; Desenvolvido por Cynthia Oka 2020
+            </footer>
+            <!--atenção à ordem das tags <script>-->
+            <script src="./utils.js"></script>
+            <script src="./home.js"></script>
+        </body>
+    </html>
