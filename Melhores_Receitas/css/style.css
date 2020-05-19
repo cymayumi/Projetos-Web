@@ -1,0 +1,184 @@
+body {
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+#imagem-logo {
+    width: 180px;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+}
+
+#centraliza-login {
+    clear: both;
+    margin-top: 330px;
+    text-align: center;
+}
+
+.form-login {
+    margin-top: -150px;
+    max-width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.cabecalho {
+    float: left;
+}
+
+.cadastro-bloco {
+    clear: both;
+    margin-top: 200px;
+}
+
+#texto_inicio {
+    clear: both;
+    margin-top: 120px;
+}
+
+#titulo-descentralizado {
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#imagem-logo-direita {
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 0px;
+}
+
+.centraliza-button{
+    text-align: center;
+}
+
+/* Style the list - breadcrumb */
+.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: rgb(205, 231, 230);
+    clear: both;
+  }
+  
+  /* Display list items side by side */
+  .breadcrumb li {
+    display: inline;
+    font-size: 15px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  .breadcrumb li+li:before {
+    padding: 5px;
+    color: #04412d;
+    content: ">\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  .breadcrumb li a {
+    color: #17b8aa;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  .breadcrumb li a:hover {
+    color: #076b72;
+    text-decoration: underline;
+  }
+
+  .nome_receita {
+    padding-top: 40px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#brigadeiro_imagem {
+  float: left;
+  padding: 30px;
+}
+
+.bloco_ingredientes {
+  float: left;
+  font-size: 18px;
+}
+
+  .bloco_ingredientes h5 {
+      font-size: 30px;
+      margin-top: 10px;
+      font-weight: bolder;
+  }
+
+.bloco_preparo {
+    clear: both;
+    font-size: 18px;
+}
+  .bloco_preparo h5 {
+      margin-top: 0px;
+      font-size: 30px;
+  }
+
+  .bloco_nutri {
+    font-size: 18px;
+}
+
+    .bloco_nutri h5 {
+        font-size: 30px;
+    }
+
+.tabela {
+    margin-left: 25%;
+    margin-top: 0px;
+    padding: 5px;
+    width: 50%;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+    .tabela thead {
+        background-color: rgba(67, 181, 233, 0.575);
+    }
+
+    .selection1 {
+        float: left;
+        width: 900px;
+    }
+    
+    .selection2 {
+        float: left;
+        font-size: 15px;
+    }
+        .selection2 a {
+            text-decoration: none;
+            background-color: darksalmon;
+            padding: 5px;
+    
+        }
+
+.likes {
+    float: left;
+    margin-left: 40%;
+    padding: 0px;
+}
+        
+#img_amei {
+    float: left;
+    margin-top: 15px;
+    padding: 5px;
+}
+        
+#contador {
+    float: left;
+    padding: 5px;
+    font-size: 25px;
+    padding-right: 10px;
+}
+        
+footer {
+    clear: both;
+}
+

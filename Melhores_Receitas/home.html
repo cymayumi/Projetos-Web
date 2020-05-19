@@ -7,25 +7,23 @@
     <!--TAGs mais usadas dentro de "head" são <title>, <meta>, <script>, <style>, <link>, <base>-->
     <title> Receitas Maravilhosas </title>
     <!--<meta> é usadada na localização do conteúdo pelos mecanismos de busca ou para indicar como pág deve ser renderizada-->
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
- <!--conteúdo da página que será mostrado pelos navegadores-->
-        <!--os mais usados são text, list, links, tables, images-->
-        <!--"class" identificam um conjunto de elementos enquanto o "id" é a forma de identificar 
-            um elemento e seve ser único para cada um-->
-            <hearder id="inicio_cabecalho">
-                <h1 id="texto_logo">Melhores Receitas do Mundo</h1>
-                    <!--<div> identifica uma seção em nossa página. Em HTML5 temos mais TAGs disponíveis para
-                        organizar melhor o código, sem usar apenas <div>, temos <section>, <article>, <footer>, <nav>-->
-                <div id="texto_inicio">
-                    <p id="message">Aqui você encontrará as mais deliciosas receitas do mundo e suas histórias!</p>
-                </div> 
-            </hearder>
-            <figure id="logo_imagem">
-                <a href="home.html"><img src="logo1.png" width="190px"/></a>
-            </figure> 
+<!--conteúdo da página que será mostrado pelos navegadores-->
+<!--os mais usados são text, list, links, tables, images-->
+<!--"class" identificam um conjunto de elementos enquanto o "id" é a forma de identificar um elemento e seve ser único para cada um-->         
+    <hearder class="cabecalho">
+        <h1 id="titulo-descentralizado">Top Chefs Receitas Mundiais</h1>
+    </hearder>
+    <figure id="imagem-logo-direita">
+        <img src="images/logo1.png" width="190px"/>
+    </figure>
+    <div id="texto_inicio">
+        <p id="message">Aqui você encontrará as mais deliciosas receitas do mundo e suas histórias!</p>
+    </div> 
+    <!--<div> identifica uma seção em nossa página. Em HTML5 temos mais TAGs disponíveis para organizar melhor o código, sem usar apenas <div>, temos <section>, <article>, <footer>, <nav>-->
             <ul class="breadcrumb">
                 <li><a href="#">Receitas</a></li>
                 <li><a href="#">Melhores Receitas</a></li>
@@ -38,7 +36,7 @@
             <section class="selection1">
                 
                 <figure id="brigadeiro_imagem">
-                    <img src="brigadeiro1.jpg" alt="Foto do Brigadeiro" width="200px"/>
+                    <img src="images/brigadeiro1.jpg" alt="Foto do Brigadeiro" width="200px"/>
                 </figure>
                 <div class="bloco_ingredientes">
                     <h5>Ingredientes</h5>
@@ -108,7 +106,7 @@
                         <a href="cadastro.html">Cadastre-se no nosso site >></a>
                     </p>
                 <button class="likes" onclick="contarLikes()">
-                    <img src="amei.jpg" width="40px" id="img_amei"/>
+                    <img src="images/amei.jpg" width="40px" id="img_amei"/>
                     <p id="contador">0</p>
                 </button>
             </section>
@@ -117,7 +115,7 @@
                 &copy; Desenvolvido por Cynthia Oka 2020
             </footer>
             <!--atenção à ordem das tags <script>-->
-            <script src="./utils.js"></script>
-            <script src="./home.js"></script>
+            <script src="js/utils.js"></script>
+            <script src="js/home.js"></script>
         </body>
     </html>
