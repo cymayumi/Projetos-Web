@@ -182,3 +182,13 @@ footer {
     clear: both;
 }
 
+.imagem_hist {
+    text-align: center;
+}
+
+.des_foto p {
+    text-align: center;
+    font-style: oblique;
+    color: rgb(150, 150, 150);
+    font-size: 15px;
+}
