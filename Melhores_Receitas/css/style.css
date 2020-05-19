@@ -58,7 +58,7 @@ h1 {
     text-align: center;
 }
 
-/* Style the list - breadcrumb */
+/* estilizando lista - breadcrumb */
 .breadcrumb {
     padding: 10px 16px;
     list-style: none;
@@ -66,31 +66,32 @@ h1 {
     clear: both;
   }
   
-  /* Display list items side by side */
+  /* mostra os itens lado a lado */
   .breadcrumb li {
     display: inline;
     font-size: 15px;
   }
   
-  /* Add a slash symbol (/) before/behind each list item */
+  /* add uma barra (>) antes e depois de cada item */
   .breadcrumb li+li:before {
     padding: 5px;
     color: #04412d;
     content: ">\00a0";
   }
   
-  /* Add a color to all links inside the list */
+  /* cor de cada link dentro da lista */
   .breadcrumb li a {
     color: #17b8aa;
     text-decoration: none;
   }
   
-  /* Add a color on mouse-over */
+  /* cor ao passar o mouse */
   .breadcrumb li a:hover {
     color: #076b72;
     text-decoration: underline;
   }
 
+  /* estiliza o conteúdo da receita */
   .nome_receita {
     padding-top: 40px;
     font-size: 35px;
@@ -143,22 +144,35 @@ h1 {
         background-color: rgba(67, 181, 233, 0.575);
     }
 
-    .selection1 {
-        float: left;
-        width: 900px;
-    }
-    
-    .selection2 {
-        float: left;
-        font-size: 15px;
-    }
-        .selection2 a {
-            text-decoration: none;
-            background-color: darksalmon;
-            padding: 5px;
-    
-        }
+/* estiliza conteúdo da história */
+.imagem_hist {
+    text-align: center;
+}
 
+.des_foto p {
+    text-align: center;
+    font-style: oblique;
+    color: rgb(150, 150, 150);
+    font-size: 15px;
+}
+
+/* style de duas colunas (posicionamento das seções no browser) */
+.selection1 {
+    float: left;
+    width: 900px;
+}
+    
+.selection2 {
+    float: left;
+    font-size: 15px;
+}
+    .selection2 a {
+        text-decoration: none;
+        background-color: darksalmon;
+        padding: 5px;
+    }
+
+/* formatação do contador de likes */
 .likes {
     float: left;
     margin-left: 40%;
@@ -177,18 +191,8 @@ h1 {
     font-size: 25px;
     padding-right: 10px;
 }
-        
+
+/* style do footer */        
 footer {
     clear: both;
-}
-
-.imagem_hist {
-    text-align: center;
-}
-
-.des_foto p {
-    text-align: center;
-    font-style: oblique;
-    color: rgb(150, 150, 150);
-    font-size: 15px;
 }
