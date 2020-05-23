@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/*---Media Queries---*/
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+
+
+.navbar-brand {
+    background-color: darkorchid;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.texto-logo {
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-shadow: 4px 3px 0px #7A7A7A;
+}
