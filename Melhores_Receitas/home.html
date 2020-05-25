@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="py-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,31 +14,56 @@
 <!--conteúdo da página que será mostrado pelos navegadores-->
 <!--os mais usados são text, list, links, tables, images-->
 <!--"class" identificam um conjunto de elementos enquanto o "id" é a forma de identificar um elemento e seve ser único para cada um-->         
-    <hearder class="cabecalho">
-        <h1 id="titulo-descentralizado">Top Chefs Receitas Mundiais</h1>
+    <hearder class="header">
+        <h1 class="display-4 padding">Receitas Mundiais</h1>
+        <figure>
+            <img src="images/logo1.png" width="130px"/>
+        </figure>
     </hearder>
-    <figure id="imagem-logo-direita">
-        <img src="images/logo1.png" width="190px"/>
-    </figure>
-    <div id="texto_inicio">
-        <p id="message">Aqui você encontrará as mais deliciosas receitas do mundo e suas histórias!</p>
+    <div class="flex padding">
+        <p class="lead">Aqui você encontrará as mais deliciosas receitas do mundo e suas histórias!</p>
     </div> 
     <!--<div> identifica uma seção em nossa página. Em HTML5 temos mais TAGs disponíveis para organizar melhor o código, sem usar apenas <div>, temos <section>, <article>, <footer>, <nav>-->
-            <ul class="breadcrumb">
-                <li><a href="#">Receitas</a></li>
-                <li><a href="#">Melhores Receitas</a></li>
-                <li><a href="#">Categoria Doces</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Melhores Receitas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Histórias</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Participe</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Equipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
             </ul>
-            <div class="nome_receita">
-                <h3>Brigadeiro de Chocolate</h3> 
-                <hr/>
-            </div>
-            <section class="selection1">
-                
-                <figure id="brigadeiro_imagem">
+        </div>
+    </nav> 
+    <div class="nome_receita padding">
+        <h3>Brigadeiro de Chocolate</h3> 
+        <hr/>
+    </div>
+
+    <div class="caixa-box padding">
+        <div class="box-receita">
+            <div class="bloco-ingredientes padding">
+                <figure> 
                     <img src="images/brigadeiro1.jpg" alt="Foto do Brigadeiro" width="200px"/>
                 </figure>
-                <div class="bloco_ingredientes">
+                <div class="padding">
                     <h5>Ingredientes</h5>
                     <ul class="lista_ingredientes">
                         <li>1 lata de leite condensado</li>
@@ -48,68 +73,67 @@
                         <li>Pitada de sal</li>
                     </ul>
                 </div>
-                <div class ="bloco_preparo">
-                    <h5>Modo de Preparo</h5>
-                    <p>
-                        Misture o leite condensado, o chocolate em pó e a manteiga em fogo baixo até tudo ser incorporado. Mexa 
-                        sem parar sua mistura até ela começar a desgrudar da panela e você perceber que ela já está no ponto para enrolar.
-                    </p>
-                    <p>
-                        Arrume todas as forminhas em uma bandeija. Após esfriar nossa mistura, faça bolinhas e envolva-as em
-                         chocolate granulado. Se quiser pode adicionar diferentes confeitos para deixar seus brigadeiros mais bonitos e gostosos.
-                    </p>
-                </div>
-                <div class="bloco_nutri">
-                    <h5>Informações Nutricionais</h5>
-                    <table class="tabela">
-                        <thead>
-                            <tr>
-                                <th>Ingredientes</th>
-                                <th>Calorias</tr>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Leite Condensado</td>
-                                <td>356 Kcal</td>
-                            </tr>
-                            <tr>
-                                <td>Manteiga</td>
-                                <td>120 Kcal</td>
-                            </tr>
-                            <tr>
-                                <td>Chocolate em pó</em></td>
-                                <td>284 Kcal</td>
-                            </tr>
-                            <tr>
-                                <td>Granulado</td>
-                                <td>55 Kcal</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>     
-            </section>
-            <section class="selection2">
+            </div>
+            <div class ="padding">
+                <h5>Modo de Preparo</h5>
                 <p>
-                <!--link para um elemento externo a esse HTML-->
-                    <a href="historia.html">Conheça a História do Brigadeiro >></a>
+                    Misture o leite condensado, o chocolate em pó e a manteiga em fogo baixo até tudo ser incorporado. Mexa 
+                    sem parar sua mistura até ela começar a desgrudar da panela e você perceber que ela já está no ponto para enrolar.
                 </p>
                 <p>
-                 <!--links (endereços para outra URL ou para outra posição dentro da mesma página) são adicionados no código HTML por meio de ancoras, ou seja, utilizando a TAG <a>. Identificamos se a TAG é a fonte ou o target do click. <div> e outras TAGs também podem ser usadas como ancoras ao linkarmos o ID-->
-                    <a href="https://www.carrefour.com.br/">Compre os ingredientes ></a>
+                    Arrume todas as forminhas em uma bandeija. Após esfriar nossa mistura, faça bolinhas e envolva-as em
+                        chocolate granulado. Se quiser pode adicionar diferentes confeitos para deixar seus brigadeiros mais bonitos e gostosos.
                 </p>
-                <p>
-                        <a href="cadastro.html">Cadastre-se no nosso site >></a>
-                    </p>
-                <button class="likes" onclick="contarLikes()">
-                    <img src="images/amei.jpg" width="40px" id="img_amei"/>
+            </div>
+            <div class="bloco-nutri padding">
+                <h5>Informações Nutricionais</h5>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Ingredientes</th>
+                            <th>Calorias</tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Leite Condensado</td>
+                            <td>356 Kcal</td>
+                        </tr>
+                        <tr>
+                            <td>Manteiga</td>
+                            <td>120 Kcal</td>
+                        </tr>
+                        <tr>
+                            <td>Chocolate em pó</em></td>
+                            <td>284 Kcal</td>
+                        </tr>
+                        <tr>
+                            <td>Granulado</td>
+                            <td>55 Kcal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>     
+        </div>
+
+        <div class="box-aside padding">
+            <p><a href="historia.html">Conheça a História do Brigadeiro >></a></p>
+            <!--link para um elemento externo a esse HTML-->
+            <p><a href="https://www.carrefour.com.br/">Compre os ingredientes ></a></p>
+                <!--links (endereços para outra URL ou para outra posição dentro da mesma página) são adicionados no código HTML por meio de ancoras, ou seja, utilizando a TAG <a>. Identificamos se a TAG é a fonte ou o target do click. <div> e outras TAGs também podem ser usadas como ancoras ao linkarmos o ID-->
+            <p><a href="cadastro.html">Cadastre-se no nosso site >></a></p>
+
+            <div class="contador-likes" onclick="contarLikes()">
+                    <img src="images/amei.jpg" width="40px"/>
                     <p id="contador">0</p>
-                </button>
-            </section>
-            <footer>
-                <hr/>
-                &copy; Desenvolvido por Cynthia Oka 2020
-            </footer>
+            </div>
+        </div>
+     </div>
+
+    <footer>
+        <hr/>
+        &copy; Desenvolvido por Cynthia Oka 2020
+    </footer>
             <!--atenção à ordem das tags <script>-->
             <script src="js/utils.js"></script>
             <script src="js/home.js"></script>

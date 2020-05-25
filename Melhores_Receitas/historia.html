@@ -8,26 +8,50 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <hearder class="cabecalho">
-        <h1 id="titulo-descentralizado">Top Chefs Receitas Mundiais</h1>
+    <hearder class="header">
+        <h1 class="display-4 padding">Receitas Mundiais</h1>
+        <figure>
+            <img src="images/logo1.png" width="130px"/>
+        </figure>
     </hearder>
-    <figure id="imagem-logo-direita">
-        <img src="images/logo1.png" width="190px"/>
-    </figure>
-    <div id="texto_inicio">
-        <p id="message">Aqui você encontrará as mais deliciosas receitas do mundo e suas histórias!</p>
+    <div class="flex padding">
+        <p class="lead">Aqui você encontrará as mais deliciosas receitas do mundo e suas histórias!</p>
     </div> 
-    <ul class="breadcrumb">
-        <li><a href="#">Receitas</a></li>
-        <li><a href="#">Melhores Receitas</a></li>
-        <li><a href="#">Categoria Doces</a></li>
-    </ul>
-    <div class="nome_receita">
-        <h3>A História do Brigadeiro</h3>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Melhores Receitas</a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Histórias</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Participe</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Equipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+    <div class="nome_receita padding">
+        <h3>Brigadeiro de Chocolate</h3> 
         <hr/>
     </div>
-    <div class="selection1">
-        <div>
+
+    <div class="caixa-box padding">
+        <div class="box-receita padding">
             <p>
                 O brigadeiro é feito de leite condensado, chocolate em pó e manteiga, e enrolado em granulado. 
                 Ingredientes à parte, o doce tem uma origem incomum. Ficou popular na década de 1940, quando o 
@@ -100,22 +124,27 @@
                 brigadeiro. Ele perdeu a eleição para Eurico Gaspar Dutra, e o fervor pelo leite condensado – 
                 e pelo brigadeiro – dura até hoje.
             </p>
+            
+            <div class="centraliza-button padding">
+                <button id="btn_comentario" class="btn btn-secondary btn-lg" type="button" onclick="esconder()">Mostrar Comentários</button>
+            </div>
+            <div id="comentario" class="container d-none">
+                <h2>Maria Joana - SP</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quo, culpa illo odit ducimus quisquam enim quas adipisci temporibus inventore libero, dignissimos aliquam natus nisi, dolorum molestiae doloribus laudantium quasi!</p>
+            </div>
         </div>
-        <button id="btn_comentario" class="btn btn-light" type="button" onclick="esconder()">Mostrar Comentários</button>
-        <div id="comentario" class="container d-none">
-            <h2>Maria Joana - SP</h2>
-            <p>Fiz o brigadeiro e estava maravilhoso!! A história também é muito interessante. Beijos!</p>
+
+        <div class="box-aside padding">
+            <p>
+                <a href="home.html">Voltar para a receita</a>
+            </p>
+            <p>
+            <!--link com redirecionamento interno, volta lá pra cima, redirecionará para a página na posição da ancora #inicio-->
+                <a href="#inicio">Voltar ao topo da página</a>
+            </p>  
         </div>
     </div>
-    <div class="selection2">
-        <p>
-            <a href="home.html">Voltar para a receita</a>
-        </p>
-        <p>
-        <!--link com redirecionamento interno, volta lá pra cima, redirecionará para a página na posição da ancora #inicio-->
-            <a href="#inicio">Voltar ao topo da página</a>
-        </p>  
-    </div>
+
     <footer>
         <hr/>
         &copy; Desenvolvido por Cynthia Oka 2020
