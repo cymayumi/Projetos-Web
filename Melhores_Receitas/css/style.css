@@ -1,5 +1,5 @@
 
-.centraliza-button{
+.centraliza-button {
     text-align: center;
 }
 
@@ -29,39 +29,36 @@
     font-weight: bold;
 }
 
-.caixa-box{
+.caixa-box {
     display: flex;
     flex-wrap: wrap;
     margin: 0px;
- }
+}
  
- .box-receita{
+.box-receita {
     max-width: 1000px;
     flex-grow:4;
- }
+}
  
- .box2{
+.box2 {
     flex-grow: 1;
- }
-
- .bloco-ingredientes {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: left;
- }
-
-.tabela {
-    margin-left: 25%;
-    margin-top: 0px;
-    padding: 5px;
-    width: 50%;
-    text-align: left;
-    margin-bottom: 100px;
 }
 
-    .tabela thead {
-        background-color: rgba(67, 181, 233, 0.575);
-    }
+.bloco-ingredientes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.tabela {
+    margin: 25px;
+    width: 75%;
+    text-align: left;
+}
+
+.tabela thead {
+    background-color: rgba(67, 181, 233, 0.575);
+}
 
 .box-aside a {
     text-decoration: none;
